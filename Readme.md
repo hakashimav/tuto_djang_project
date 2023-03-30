@@ -1,1 +1,1 @@
-#Ceci est un template pour un apprentisage avec Django
+# Ceci est un template pour un apprentisage avec Django
