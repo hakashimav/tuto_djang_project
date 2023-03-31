@@ -4,6 +4,14 @@ from django.template.response import TemplateResponse
 from myApp.modelClasses.model_Post import PostClass
 
 # Create your views here.
+def login(request):
+    try:
+
+        response =  TemplateResponse(request, 'page/login.html', {})
+        return response
+    except Exception:
+        return HttpResponse("ERROR")
+
 def index(request):
     try:
         model=PostClass.listPosts()
@@ -14,6 +22,7 @@ def index(request):
         return response
     except Exception:
         return HttpResponse("ERROR")
+
 
 
 # def selectedPost(request,id):
